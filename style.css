@@ -1,0 +1,162 @@
+:root {
+  --accent: #0d7a6f;
+  --accent-hover: #0a635b;
+  --text: #1c1c1c;
+  --muted: #5c5c5c;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --border: #e4e4e0;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+  margin: 0 0 0.6em;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+}
+
+p {
+  margin: 0 0 1em;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+}
+
+.hero,
+.section,
+.footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.hero {
+  padding-top: 64px;
+}
+
+.hero__label {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero__text {
+  max-width: 36em;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: var(--accent-hover);
+}
+
+.btn--small {
+  padding: 10px 18px;
+  margin-top: 8px;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin: 0;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.card--price p {
+  margin-bottom: 1em;
+}
+
+.card--price .btn {
+  margin-top: 4px;
+}
+
+.price {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.5em;
+}
+
+.card--accent {
+  border-color: var(--accent);
+}
+
+cite {
+  display: block;
+  margin-top: 12px;
+  font-style: normal;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding-bottom: 64px;
+}
+
+.footer p {
+  margin-bottom: 0.5em;
+}
+
+.footer .btn {
+  margin-top: 12px;
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
